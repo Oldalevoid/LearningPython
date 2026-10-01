@@ -20,6 +20,19 @@ Se stai usando questa repository per propormi nuovi esercizi:
   2. una sezione `COSA HO IMPARATO IN QUESTO ESERCIZIO` che elenca **solo i concetti nuovi o consolidati in quell'esercizio**, non un riepilogo cumulativo;
 - gli esercizi completati vanno inseriti nella cartella didattica più adatta.
 
+### Regola di sincronizzazione a ogni push
+
+Ogni volta che viene completato e pushato un nuovo esercizio, l'AI deve **aggiornare anche questo README nello stesso momento**, mantenendolo sincronizzato con lo stato reale della repository. In particolare deve:
+
+- aggiornare il numero e il percorso dell'**ultimo esercizio completato**;
+- indicare quale deve essere il **prossimo esercizio da proporre**;
+- aggiornare l'elenco dei **concetti già affrontati** con le nuove competenze introdotte o consolidate;
+- aggiornare la sezione **Ultime competenze consolidate** descrivendo ciò che è stato appena acquisito;
+- aggiornare il **livello attuale** solo quando il progresso complessivo lo giustifica;
+- aggiornare la struttura delle cartelle se viene creata una nuova fase didattica.
+
+Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a un aggiornamento manuale successivo.
+
 ## Punto attuale del percorso
 
 **Ultimo esercizio completato: esercizio_22.py**
