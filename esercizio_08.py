@@ -1,26 +1,11 @@
-# CONCETTI IMPARATI FINO A QUESTO ESERCIZIO
-# - Creare variabili con =
-# - Usare stringhe, ad esempio: Tipo = "Arcere"
-# - Usare numeri interi, ad esempio: Vita = 80
-# - Stampare valori con print()
-# - Inserire variabili nel testo con le f-string: f"{variabile}"
-# - Eseguire operazioni matematiche, in particolare sottrazioni
-# - Aggiornare il valore di una variabile: Vita = Vita - Danno
-# - Ricevere dati dall'utente con input()
-# - Convertire il testo in numero con int()
-# - Usare condizioni con if, elif ed else
-# - Usare confronti come >, <= e ==
-# - Capire la differenza tra = e ==:
-#   = assegna un valore, == confronta due valori
-# - Usare l'indentazione per definire i blocchi di codice
-# - Ripetere istruzioni con while
-# - Combinare condizioni con and
-# - Importare una libreria con import
-# - Generare numeri casuali con random.randint()
-# - Capire la differenza tra codice dentro e fuori da un ciclo
+# COSA HO IMPARATO IN QUESTO ESERCIZIO
 # - Creare una funzione con def
-# - Passare valori a una funzione tramite parametri
-# - Richiamare una funzione più volte per riutilizzare la stessa logica
+# - Definire parametri dentro una funzione
+# - Passare valori a una funzione quando viene chiamata
+# - Richiamare la stessa funzione più volte per evitare codice duplicato
+# - Capire che i parametri ricevono automaticamente i valori passati alla funzione
+# - Capire meglio la differenza tra = e ==:
+#   = assegna un valore, == confronta due valori
 
 import random
 
