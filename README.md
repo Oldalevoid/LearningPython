@@ -1,0 +1,3 @@
+Sto imparando Python da zero attraverso un percorso di esercizi progressivi. Questo repository raccoglie gli esercizi svolti e il codice sviluppato nel tempo, con l'obiettivo di acquisire gradualmente padronanza sia di Python sia dei fondamenti del game development.
+
+Questo file serve a fornire contesto all'AI che analizzerà il repository pubblico, permettendole di comprendere ciò che è già stato programmato, il livello raggiunto e gli argomenti affrontati. In questo modo potrà proporre nuovi esercizi coerenti con il percorso già svolto, aumentando progressivamente la difficoltà e ripartendo dalle competenze già acquisite senza ripetere inutilmente gli stessi concetti.
