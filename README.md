@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_29.py**
+**Ultimo esercizio completato: esercizio_30.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_29.py
+  esercizio_18.py - esercizio_30.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_30.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_31.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -123,7 +123,11 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - prevenzione dell'accesso a una lista vuota durante il combattimento;
 - conclusione della battaglia quando un esercito resta senza unità;
 - selezione casuale di un elemento da una lista con `random.choice()`;
-- scelta casuale di attaccante e bersaglio durante una battaglia.
+- scelta casuale di attaccante e bersaglio durante una battaglia;
+- salvataggio delle scelte casuali in variabili;
+- uso di un contatore dei turni;
+- stampa leggibile di chi attacca chi;
+- nuova selezione dell'attaccante dopo una possibile eliminazione.
 
 ## Ultime competenze consolidate
 
@@ -142,11 +146,13 @@ Negli esercizi più recenti sono stati costruiti:
 - selezione di attaccante e bersaglio da due eserciti distinti;
 - rimozione delle unità morte dalla lista dell'esercito;
 - ciclo completo di battaglia tra due eserciti;
-- battaglia con attaccanti e bersagli scelti casualmente tramite `random.choice()`.
+- battaglia con attaccanti e bersagli scelti casualmente tramite `random.choice()`;
+- log testuale dei combattimenti con numero del turno e nomi di attaccante e bersaglio;
+- riselezione sicura delle unità prima del contrattacco.
 
-L'esercizio 29 rende la battaglia meno rigida: a ogni attacco, attaccante e bersaglio vengono selezionati con `random.choice()` dalle rispettive liste. Rimane il controllo che impedisce di scegliere da un esercito vuoto dopo l'eliminazione dell'ultima unità.
+L'esercizio 30 rende la battaglia più leggibile: ogni turno viene numerato, attaccante e bersaglio vengono salvati in variabili e il programma stampa chi attacca chi. Prima del contrattacco le unità vengono selezionate di nuovo, evitando che un combattente appena eliminato possa continuare ad agire.
 
-Il prossimo passo deve rendere lo scontro più leggibile e più simile a un gioco: salvare attaccante e bersaglio in variabili, mostrare chi attacca chi e introdurre un semplice contatore dei turni senza cambiare ancora la struttura generale della battaglia.
+Il prossimo passo deve aggiungere una semplice meccanica di colpo critico casuale, riutilizzando `random.randint()` e le condizioni già studiate, senza cambiare ancora la struttura generale della battaglia.
 
 ## Direzione del percorso
 
