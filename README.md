@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_32.py**
+**Ultimo esercizio completato: esercizio_33.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_32.py
+  esercizio_18.py - esercizio_33.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_33.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_34.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -133,7 +133,11 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - uso di una variabile temporanea per applicare un danno maggiorato senza alterare permanentemente il danno base;
 - uso di `return` per interrompere anticipatamente una funzione;
 - implementazione di una probabilità di schivata del 20%;
-- ordinamento logico degli eventi casuali: prima schivata, poi eventuale critico.
+- ordinamento logico degli eventi casuali: prima schivata, poi eventuale critico;
+- aggiunta della statistica `Armatura` alle unità;
+- separazione tra calcolo del danno e applicazione del danno;
+- calcolo del danno effettivo come danno meno armatura;
+- imposizione di un danno minimo pari a 1.
 
 ## Ultime competenze consolidate
 
@@ -156,11 +160,13 @@ Negli esercizi più recenti sono stati costruiti:
 - log testuale dei combattimenti con numero del turno e nomi di attaccante e bersaglio;
 - riselezione sicura delle unità prima del contrattacco;
 - colpi critici casuali che raddoppiano il danno solo per il singolo attacco;
-- schivate casuali che interrompono subito l'attacco tramite `return`.
+- schivate casuali che interrompono subito l'attacco tramite `return`;
+- armatura che riduce il danno ricevuto;
+- calcolo del danno effettivo prima di modificare la vita del bersaglio.
 
-L'esercizio 32 aggiunge una probabilità di schivata del 20%. Se il bersaglio schiva, la funzione `attacca()` termina subito con `return`; solo in caso contrario viene calcolato l'eventuale colpo critico. Questo consolida l'uso di uscite anticipate e l'ordine logico degli eventi.
+L'esercizio 33 aggiunge la statistica `Armatura` e introduce una separazione chiara tra calcolo e applicazione del danno. Il programma determina prima il danno normale o critico, sottrae l'armatura del bersaglio, impone un danno minimo di 1 e modifica la vita una sola volta alla fine.
 
-Il prossimo passo deve iniziare a introdurre una vera nuova statistica dell'unità, ad esempio l'armatura, per ridurre il danno ricevuto senza complicare eccessivamente il combattimento.
+Il prossimo passo deve iniziare a strutturare meglio il codice di combattimento, spostando parti della logica in funzioni dedicate senza introdurre ancora classi.
 
 ## Direzione del percorso
 
