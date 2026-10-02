@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_28.py**
+**Ultimo esercizio completato: esercizio_29.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_28.py
+  esercizio_18.py - esercizio_29.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_29.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_30.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -121,7 +121,9 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - ciclo di battaglia con `while`;
 - controllo simultaneo dello stato di due eserciti;
 - prevenzione dell'accesso a una lista vuota durante il combattimento;
-- conclusione della battaglia quando un esercito resta senza unità.
+- conclusione della battaglia quando un esercito resta senza unità;
+- selezione casuale di un elemento da una lista con `random.choice()`;
+- scelta casuale di attaccante e bersaglio durante una battaglia.
 
 ## Ultime competenze consolidate
 
@@ -139,11 +141,12 @@ Negli esercizi più recenti sono stati costruiti:
 - interazione tra due unità tramite una funzione di attacco;
 - selezione di attaccante e bersaglio da due eserciti distinti;
 - rimozione delle unità morte dalla lista dell'esercito;
-- ciclo completo di battaglia tra due eserciti.
+- ciclo completo di battaglia tra due eserciti;
+- battaglia con attaccanti e bersagli scelti casualmente tramite `random.choice()`.
 
-L'esercizio 28 introduce un ciclo `while` che mantiene in corso la battaglia finché entrambi gli eserciti hanno almeno un'unità. Dopo ogni attacco viene verificato che l'esercito avversario non sia vuoto prima di accedere alla sua prima unità.
+L'esercizio 29 rende la battaglia meno rigida: a ogni attacco, attaccante e bersaglio vengono selezionati con `random.choice()` dalle rispettive liste. Rimane il controllo che impedisce di scegliere da un esercito vuoto dopo l'eliminazione dell'ultima unità.
 
-Il prossimo passo deve rendere la battaglia meno rigida: selezionare in modo casuale l'unità che attacca o il bersaglio, riutilizzando il modulo `random` già studiato.
+Il prossimo passo deve rendere lo scontro più leggibile e più simile a un gioco: salvare attaccante e bersaglio in variabili, mostrare chi attacca chi e introdurre un semplice contatore dei turni senza cambiare ancora la struttura generale della battaglia.
 
 ## Direzione del percorso
 
