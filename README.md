@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_30.py**
+**Ultimo esercizio completato: esercizio_31.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_30.py
+  esercizio_18.py - esercizio_31.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_31.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_32.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -127,7 +127,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - salvataggio delle scelte casuali in variabili;
 - uso di un contatore dei turni;
 - stampa leggibile di chi attacca chi;
-- nuova selezione dell'attaccante dopo una possibile eliminazione.
+- nuova selezione dell'attaccante dopo una possibile eliminazione;
+- generazione di un tiro casuale con `random.randint()` per determinare un evento di combattimento;
+- implementazione di un colpo critico con probabilità del 30%;
+- uso di una variabile temporanea per applicare un danno maggiorato senza alterare permanentemente il danno base.
 
 ## Ultime competenze consolidate
 
@@ -148,11 +151,12 @@ Negli esercizi più recenti sono stati costruiti:
 - ciclo completo di battaglia tra due eserciti;
 - battaglia con attaccanti e bersagli scelti casualmente tramite `random.choice()`;
 - log testuale dei combattimenti con numero del turno e nomi di attaccante e bersaglio;
-- riselezione sicura delle unità prima del contrattacco.
+- riselezione sicura delle unità prima del contrattacco;
+- colpi critici casuali che raddoppiano il danno solo per il singolo attacco.
 
-L'esercizio 30 rende la battaglia più leggibile: ogni turno viene numerato, attaccante e bersaglio vengono salvati in variabili e il programma stampa chi attacca chi. Prima del contrattacco le unità vengono selezionate di nuovo, evitando che un combattente appena eliminato possa continuare ad agire.
+L'esercizio 31 aggiunge una meccanica di colpo critico casuale: ogni attacco genera un numero da 1 a 100 e, con valori superiori a 70, infligge il doppio del danno. Il danno maggiorato viene calcolato in una variabile temporanea, evitando di modificare permanentemente la statistica `Danno` dell'unità.
 
-Il prossimo passo deve aggiungere una semplice meccanica di colpo critico casuale, riutilizzando `random.randint()` e le condizioni già studiate, senza cambiare ancora la struttura generale della battaglia.
+Il prossimo passo deve introdurre una seconda statistica di combattimento semplice, ad esempio una probabilità di schivata, continuando a riutilizzare `random.randint()` e le condizioni senza rendere il programma troppo complesso.
 
 ## Direzione del percorso
 
