@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_22.py**
+**Ultimo esercizio completato: esercizio_23.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_22.py
+  esercizio_18.py - esercizio_23.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_23.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_24.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -99,7 +99,11 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - `enumerate()`;
 - `enumerate(..., start=1)`;
 - relazione tra numero mostrato all'utente e indice reale di una lista;
-- validazione di un input numerico sia per tipo sia per intervallo.
+- validazione di un input numerico sia per tipo sia per intervallo;
+- passaggio di una lista come argomento a una funzione;
+- uso di una struttura dati tramite un parametro di funzione;
+- restituzione di un dizionario con `return`;
+- salvataggio e utilizzo del dizionario restituito da una funzione.
 
 ## Ultime competenze consolidate
 
@@ -109,9 +113,13 @@ Negli esercizi più recenti sono stati costruiti:
 - funzioni per creare nuove unità;
 - input numerici robusti che non fanno terminare il programma in caso di errore;
 - selezione numerata di unità tramite `enumerate()`;
-- controlli che impediscono di accedere a indici inesistenti.
+- controlli che impediscono di accedere a indici inesistenti;
+- funzioni riutilizzabili che ricevono un esercito come parametro;
+- restituzione e successivo utilizzo del dizionario dell'unità selezionata.
 
-L'esercizio 22 mostra un esercito numerato, chiede all'utente quale unità selezionare e continua a richiedere l'input finché non viene inserito un numero valido e compreso tra le opzioni disponibili.
+L'esercizio 23 trasforma la selezione di un'unità in una funzione riutilizzabile: la funzione riceve un esercito, mostra le unità, valida la scelta dell'utente e restituisce direttamente il dizionario dell'unità selezionata.
+
+Il prossimo passo deve consolidare le funzioni che lavorano direttamente sui dizionari delle unità, introducendo in modo semplice la modifica dello stato di un'unità, ad esempio applicando danno alla sua `Vita`.
 
 ## Direzione del percorso
 
