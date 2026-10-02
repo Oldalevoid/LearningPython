@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_34.py**
+**Ultimo esercizio completato: esercizio_35.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_34.py
+  esercizio_18.py - esercizio_35.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_35.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_36.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -141,7 +141,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - separazione della logica in funzioni con responsabilità distinte;
 - restituzione del danno calcolato tramite `return`;
 - uso di `return 0` per rappresentare un attacco schivato;
-- controllo del valore restituito prima di modificare lo stato del bersaglio.
+- controllo del valore restituito prima di modificare lo stato del bersaglio;
+- spostamento di un intero scambio di attacchi in una funzione dedicata;
+- uso dei parametri della funzione al posto di variabili globali quando possibile;
+- semplificazione del ciclo principale tramite astrazione.
 
 ## Ultime competenze consolidate
 
@@ -167,11 +170,12 @@ Negli esercizi più recenti sono stati costruiti:
 - schivate casuali che interrompono subito l'attacco tramite `return`;
 - armatura che riduce il danno ricevuto;
 - calcolo del danno effettivo prima di modificare la vita del bersaglio;
-- funzione dedicata `calcoladanno()` separata da `attacca()`.
+- funzione dedicata `calcoladanno()` separata da `attacca()`;
+- funzione `combattimento()` che gestisce un intero scambio di attacchi.
 
-L'esercizio 34 separa il calcolo del danno dall'applicazione del danno: `calcoladanno()` gestisce schivata, critico e armatura e restituisce il danno effettivo; `attacca()` usa quel valore per modificare la vita e gestire la morte. La schivata viene rappresentata con `return 0`, controllato prima di applicare il danno.
+L'esercizio 35 sposta un intero scambio di attacchi nella funzione `combattimento(esercitobuono, esercitoavversario)`. Il ciclo principale resta così responsabile solo del conteggio dei turni e della ripetizione della battaglia. La funzione usa i parametri ricevuti anziché dipendere direttamente dalle variabili globali degli eserciti.
 
-Il prossimo passo deve spostare anche la gestione di un intero scambio di attacchi in una funzione dedicata, iniziando a rendere il ciclo principale più corto e leggibile senza introdurre ancora classi.
+Il prossimo passo deve spostare anche l'intera battaglia in una funzione dedicata, compresi ciclo dei turni e determinazione del vincitore, così che il programma principale possa avviarla con una sola chiamata.
 
 ## Direzione del percorso
 
