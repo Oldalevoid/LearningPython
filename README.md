@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_38.py**
+**Ultimo esercizio completato: esercizio_39.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_38.py
+  esercizio_18.py - esercizio_39.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_39.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_40.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -157,7 +157,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - reclutamento condizionato dalla disponibilità di risorse;
 - aggiornamento dell'oro tramite valore restituito da una funzione;
 - uso di `>=` per consentire l'acquisto quando oro e costo coincidono;
-- importanza di restituire un valore in tutti i percorsi della funzione per evitare `None` inattesi.
+- importanza di restituire un valore in tutti i percorsi della funzione per evitare `None` inattesi;
+- uso combinato di `enumerate()`, `try/except`, `while True`, `continue` e `break` per validare una scelta di menu;
+- trasformazione della scelta mostrata all'utente nell'indice reale della lista con `scelta - 1`;
+- distinzione operativa tra `continue`, `break` e `return`.
 
 ## Ultime competenze consolidate
 
@@ -188,11 +191,13 @@ Negli esercizi più recenti sono stati costruiti:
 - funzione `battaglia()` che gestisce l'intera battaglia e restituisce il vincitore;
 - gestione del messaggio finale fuori dalla funzione di battaglia;
 - funzione `recluta()` che aggiunge unità all'esercito e aggiorna l'oro;
-- controllo delle risorse prima del reclutamento.
+- controllo delle risorse prima del reclutamento;
+- menu numerato di reclutamento con input robusto;
+- selezione di un'unità tramite indice validato.
 
-L'esercizio 38 introduce una prima vera risorsa di gioco: l'oro. Ogni unità possiede un `Costo` e la funzione `recluta()` verifica se il giocatore può permettersela, la aggiunge all'esercito con `.append()`, sottrae il costo e restituisce sempre il valore aggiornato dell'oro. È stato consolidato anche un concetto importante: se un percorso della funzione termina senza `return`, Python restituisce `None`.
+L'esercizio 39 aggiunge un menu numerato per scegliere quale unità reclutare. La funzione usa `enumerate(..., start=1)` per mostrare le opzioni, `try/except ValueError` per gestire input non numerici, `while True` e `continue` per ripetere la richiesta e `break` per proseguire solo quando la scelta è valida. È stata consolidata anche la conversione tra numero mostrato all'utente e indice reale della lista tramite `scelta - 1`.
 
-Il prossimo passo deve permettere al giocatore di scegliere quale unità reclutare da un elenco numerato, riutilizzando `enumerate()` e la validazione dell'input.
+Il prossimo passo deve separare chiaramente il catalogo delle unità disponibili dall'esercito posseduto dal giocatore: la scelta avverrà dal catalogo, mentre l'unità reclutata verrà aggiunta a una lista `EsercitoAmandola` separata.
 
 ## Direzione del percorso
 
