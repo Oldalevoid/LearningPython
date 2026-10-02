@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_35.py**
+**Ultimo esercizio completato: esercizio_36.py**
 
 Percorso attuale:
 
@@ -50,16 +50,16 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_35.py
+  esercizio_18.py - esercizio_36.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_36.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_37.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
-Livello: **principiante, ma ormai capace di combinare autonomamente diversi costrutti fondamentali di Python**.
+Livello: **principiante avanzato / intermedio iniziale in Python**.
 
-Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire piccoli programmi testuali interattivi usando insieme strutture dati, cicli, condizioni, funzioni e gestione basilare degli errori.
+Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire piccoli programmi testuali interattivi usando insieme strutture dati, cicli, condizioni, funzioni, gestione basilare degli errori e una prima organizzazione modulare del codice in funzioni con responsabilità distinte.
 
 ### Concetti già affrontati
 
@@ -144,7 +144,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - controllo del valore restituito prima di modificare lo stato del bersaglio;
 - spostamento di un intero scambio di attacchi in una funzione dedicata;
 - uso dei parametri della funzione al posto di variabili globali quando possibile;
-- semplificazione del ciclo principale tramite astrazione.
+- semplificazione del ciclo principale tramite astrazione;
+- incapsulamento dell'intero ciclo di battaglia in una funzione dedicata;
+- gestione del contatore dei turni come stato locale della funzione `battaglia()`;
+- riduzione del programma principale a una singola chiamata ad alto livello.
 
 ## Ultime competenze consolidate
 
@@ -171,11 +174,12 @@ Negli esercizi più recenti sono stati costruiti:
 - armatura che riduce il danno ricevuto;
 - calcolo del danno effettivo prima di modificare la vita del bersaglio;
 - funzione dedicata `calcoladanno()` separata da `attacca()`;
-- funzione `combattimento()` che gestisce un intero scambio di attacchi.
+- funzione `combattimento()` che gestisce un intero scambio di attacchi;
+- funzione `battaglia()` che gestisce l'intera battaglia e il vincitore.
 
-L'esercizio 35 sposta un intero scambio di attacchi nella funzione `combattimento(esercitobuono, esercitoavversario)`. Il ciclo principale resta così responsabile solo del conteggio dei turni e della ripetizione della battaglia. La funzione usa i parametri ricevuti anziché dipendere direttamente dalle variabili globali degli eserciti.
+L'esercizio 36 incapsula l'intera battaglia nella funzione `battaglia(esercitobuono, esercitoavversario)`: il contatore dei turni è locale alla funzione, il ciclo continua finché entrambi gli eserciti hanno unità e il programma principale avvia tutto con una sola chiamata.
 
-Il prossimo passo deve spostare anche l'intera battaglia in una funzione dedicata, compresi ciclo dei turni e determinazione del vincitore, così che il programma principale possa avviarla con una sola chiamata.
+Il prossimo passo deve eliminare l'ultima parte ancora troppo rigida: la determinazione del vincitore non deve dipendere da messaggi hardcoded. La funzione `battaglia()` dovrà restituire chi ha vinto, così il risultato potrà essere usato dal resto del programma.
 
 ## Direzione del percorso
 
