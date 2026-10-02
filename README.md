@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_27.py**
+**Ultimo esercizio completato: esercizio_28.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_27.py
+  esercizio_18.py - esercizio_28.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_28.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_29.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -117,7 +117,11 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - combinazione tra selezione dell'attaccante, selezione del bersaglio e attacco;
 - rimozione diretta di un elemento da una lista con `.remove()`;
 - distinzione concettuale tra `.remove(elemento)` e `.pop(indice)`;
-- aggiornamento della composizione di un esercito durante il combattimento.
+- aggiornamento della composizione di un esercito durante il combattimento;
+- ciclo di battaglia con `while`;
+- controllo simultaneo dello stato di due eserciti;
+- prevenzione dell'accesso a una lista vuota durante il combattimento;
+- conclusione della battaglia quando un esercito resta senza unità.
 
 ## Ultime competenze consolidate
 
@@ -134,11 +138,12 @@ Negli esercizi più recenti sono stati costruiti:
 - gestione della vita minima a zero e riconoscimento della morte dell'unità;
 - interazione tra due unità tramite una funzione di attacco;
 - selezione di attaccante e bersaglio da due eserciti distinti;
-- rimozione delle unità morte dalla lista dell'esercito.
+- rimozione delle unità morte dalla lista dell'esercito;
+- ciclo completo di battaglia tra due eserciti.
 
-L'esercizio 27 modifica davvero la composizione dell'esercito durante il combattimento: quando un bersaglio muore, viene rimosso dalla lista con `.remove(bersaglio)`. È stata inoltre chiarita la differenza tra `.remove(elemento)`, `.pop(indice)` e `.index(elemento)`.
+L'esercizio 28 introduce un ciclo `while` che mantiene in corso la battaglia finché entrambi gli eserciti hanno almeno un'unità. Dopo ogni attacco viene verificato che l'esercito avversario non sia vuoto prima di accedere alla sua prima unità.
 
-Il prossimo passo deve introdurre un semplice ciclo di battaglia tra due eserciti, fermandosi quando uno dei due rimane senza unità.
+Il prossimo passo deve rendere la battaglia meno rigida: selezionare in modo casuale l'unità che attacca o il bersaglio, riutilizzando il modulo `random` già studiato.
 
 ## Direzione del percorso
 
