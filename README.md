@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_36.py**
+**Ultimo esercizio completato: esercizio_37.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_36.py
+  esercizio_18.py - esercizio_37.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_37.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_38.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -147,7 +147,11 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - semplificazione del ciclo principale tramite astrazione;
 - incapsulamento dell'intero ciclo di battaglia in una funzione dedicata;
 - gestione del contatore dei turni come stato locale della funzione `battaglia()`;
-- riduzione del programma principale a una singola chiamata ad alto livello.
+- riduzione del programma principale a una singola chiamata ad alto livello;
+- restituzione di una stringa da una funzione con `return`;
+- separazione tra determinazione del risultato e presentazione del risultato;
+- salvataggio del valore restituito da `battaglia()` in una variabile;
+- uso del valore restituito per scegliere il messaggio finale.
 
 ## Ultime competenze consolidate
 
@@ -175,11 +179,12 @@ Negli esercizi più recenti sono stati costruiti:
 - calcolo del danno effettivo prima di modificare la vita del bersaglio;
 - funzione dedicata `calcoladanno()` separata da `attacca()`;
 - funzione `combattimento()` che gestisce un intero scambio di attacchi;
-- funzione `battaglia()` che gestisce l'intera battaglia e il vincitore.
+- funzione `battaglia()` che gestisce l'intera battaglia e restituisce il vincitore;
+- gestione del messaggio finale fuori dalla funzione di battaglia.
 
-L'esercizio 36 incapsula l'intera battaglia nella funzione `battaglia(esercitobuono, esercitoavversario)`: il contatore dei turni è locale alla funzione, il ciclo continua finché entrambi gli eserciti hanno unità e il programma principale avvia tutto con una sola chiamata.
+L'esercizio 37 rende `battaglia()` più riutilizzabile: la funzione riceve anche i nomi dei due eserciti e restituisce con `return` il nome del vincitore, senza decidere il messaggio finale. Il programma principale salva il risultato nella variabile `vincitore` e usa quel valore per scegliere cosa stampare.
 
-Il prossimo passo deve eliminare l'ultima parte ancora troppo rigida: la determinazione del vincitore non deve dipendere da messaggi hardcoded. La funzione `battaglia()` dovrà restituire chi ha vinto, così il risultato potrà essere usato dal resto del programma.
+Il prossimo passo deve introdurre una prima vera risorsa di gioco: ogni unità avrà un costo e il giocatore dovrà poter reclutare unità spendendo oro, senza poter scendere sotto zero.
 
 ## Direzione del percorso
 
