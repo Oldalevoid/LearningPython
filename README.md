@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_23.py**
+**Ultimo esercizio completato: esercizio_24.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_23.py
+  esercizio_18.py - esercizio_24.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_24.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_25.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -103,7 +103,11 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - passaggio di una lista come argomento a una funzione;
 - uso di una struttura dati tramite un parametro di funzione;
 - restituzione di un dizionario con `return`;
-- salvataggio e utilizzo del dizionario restituito da una funzione.
+- salvataggio e utilizzo del dizionario restituito da una funzione;
+- modifica diretta di un dizionario ricevuto come parametro;
+- aggiornamento dello stato di un'unità senza usare `return`;
+- controllo di una soglia minima per impedire valori negativi;
+- distinzione tra unità viva e unità morta tramite `if / else`.
 
 ## Ultime competenze consolidate
 
@@ -115,11 +119,13 @@ Negli esercizi più recenti sono stati costruiti:
 - selezione numerata di unità tramite `enumerate()`;
 - controlli che impediscono di accedere a indici inesistenti;
 - funzioni riutilizzabili che ricevono un esercito come parametro;
-- restituzione e successivo utilizzo del dizionario dell'unità selezionata.
+- restituzione e successivo utilizzo del dizionario dell'unità selezionata;
+- funzioni che modificano direttamente lo stato di un'unità;
+- gestione della vita minima a zero e riconoscimento della morte dell'unità.
 
-L'esercizio 23 trasforma la selezione di un'unità in una funzione riutilizzabile: la funzione riceve un esercito, mostra le unità, valida la scelta dell'utente e restituisce direttamente il dizionario dell'unità selezionata.
+L'esercizio 24 introduce la modifica diretta di un dizionario ricevuto come parametro: la funzione `subisci_danno()` riduce la `Vita`, impedisce valori negativi e distingue tra unità ancora viva e unità morta.
 
-Il prossimo passo deve consolidare le funzioni che lavorano direttamente sui dizionari delle unità, introducendo in modo semplice la modifica dello stato di un'unità, ad esempio applicando danno alla sua `Vita`.
+Il prossimo passo deve combinare le competenze degli esercizi 23 e 24: selezionare un attaccante e un bersaglio e applicare al bersaglio il `Danno` dell'attaccante.
 
 ## Direzione del percorso
 
