@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_31.py**
+**Ultimo esercizio completato: esercizio_32.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_31.py
+  esercizio_18.py - esercizio_32.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_32.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_33.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -130,7 +130,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - nuova selezione dell'attaccante dopo una possibile eliminazione;
 - generazione di un tiro casuale con `random.randint()` per determinare un evento di combattimento;
 - implementazione di un colpo critico con probabilità del 30%;
-- uso di una variabile temporanea per applicare un danno maggiorato senza alterare permanentemente il danno base.
+- uso di una variabile temporanea per applicare un danno maggiorato senza alterare permanentemente il danno base;
+- uso di `return` per interrompere anticipatamente una funzione;
+- implementazione di una probabilità di schivata del 20%;
+- ordinamento logico degli eventi casuali: prima schivata, poi eventuale critico.
 
 ## Ultime competenze consolidate
 
@@ -152,11 +155,12 @@ Negli esercizi più recenti sono stati costruiti:
 - battaglia con attaccanti e bersagli scelti casualmente tramite `random.choice()`;
 - log testuale dei combattimenti con numero del turno e nomi di attaccante e bersaglio;
 - riselezione sicura delle unità prima del contrattacco;
-- colpi critici casuali che raddoppiano il danno solo per il singolo attacco.
+- colpi critici casuali che raddoppiano il danno solo per il singolo attacco;
+- schivate casuali che interrompono subito l'attacco tramite `return`.
 
-L'esercizio 31 aggiunge una meccanica di colpo critico casuale: ogni attacco genera un numero da 1 a 100 e, con valori superiori a 70, infligge il doppio del danno. Il danno maggiorato viene calcolato in una variabile temporanea, evitando di modificare permanentemente la statistica `Danno` dell'unità.
+L'esercizio 32 aggiunge una probabilità di schivata del 20%. Se il bersaglio schiva, la funzione `attacca()` termina subito con `return`; solo in caso contrario viene calcolato l'eventuale colpo critico. Questo consolida l'uso di uscite anticipate e l'ordine logico degli eventi.
 
-Il prossimo passo deve introdurre una seconda statistica di combattimento semplice, ad esempio una probabilità di schivata, continuando a riutilizzare `random.randint()` e le condizioni senza rendere il programma troppo complesso.
+Il prossimo passo deve iniziare a introdurre una vera nuova statistica dell'unità, ad esempio l'armatura, per ridurre il danno ricevuto senza complicare eccessivamente il combattimento.
 
 ## Direzione del percorso
 
