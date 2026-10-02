@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_33.py**
+**Ultimo esercizio completato: esercizio_34.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_33.py
+  esercizio_18.py - esercizio_34.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_34.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_35.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -137,7 +137,11 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - aggiunta della statistica `Armatura` alle unità;
 - separazione tra calcolo del danno e applicazione del danno;
 - calcolo del danno effettivo come danno meno armatura;
-- imposizione di un danno minimo pari a 1.
+- imposizione di un danno minimo pari a 1;
+- separazione della logica in funzioni con responsabilità distinte;
+- restituzione del danno calcolato tramite `return`;
+- uso di `return 0` per rappresentare un attacco schivato;
+- controllo del valore restituito prima di modificare lo stato del bersaglio.
 
 ## Ultime competenze consolidate
 
@@ -162,11 +166,12 @@ Negli esercizi più recenti sono stati costruiti:
 - colpi critici casuali che raddoppiano il danno solo per il singolo attacco;
 - schivate casuali che interrompono subito l'attacco tramite `return`;
 - armatura che riduce il danno ricevuto;
-- calcolo del danno effettivo prima di modificare la vita del bersaglio.
+- calcolo del danno effettivo prima di modificare la vita del bersaglio;
+- funzione dedicata `calcoladanno()` separata da `attacca()`.
 
-L'esercizio 33 aggiunge la statistica `Armatura` e introduce una separazione chiara tra calcolo e applicazione del danno. Il programma determina prima il danno normale o critico, sottrae l'armatura del bersaglio, impone un danno minimo di 1 e modifica la vita una sola volta alla fine.
+L'esercizio 34 separa il calcolo del danno dall'applicazione del danno: `calcoladanno()` gestisce schivata, critico e armatura e restituisce il danno effettivo; `attacca()` usa quel valore per modificare la vita e gestire la morte. La schivata viene rappresentata con `return 0`, controllato prima di applicare il danno.
 
-Il prossimo passo deve iniziare a strutturare meglio il codice di combattimento, spostando parti della logica in funzioni dedicate senza introdurre ancora classi.
+Il prossimo passo deve spostare anche la gestione di un intero scambio di attacchi in una funzione dedicata, iniziando a rendere il ciclo principale più corto e leggibile senza introdurre ancora classi.
 
 ## Direzione del percorso
 
