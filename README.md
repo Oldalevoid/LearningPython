@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_24.py**
+**Ultimo esercizio completato: esercizio_25.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_24.py
+  esercizio_18.py - esercizio_25.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_25.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_26.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -107,7 +107,11 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - modifica diretta di un dizionario ricevuto come parametro;
 - aggiornamento dello stato di un'unità senza usare `return`;
 - controllo di una soglia minima per impedire valori negativi;
-- distinzione tra unità viva e unità morta tramite `if / else`.
+- distinzione tra unità viva e unità morta tramite `if / else`;
+- interazione tra due dizionari tramite una funzione;
+- uso di `-=` per aggiornare un valore numerico;
+- applicazione del `Danno` di un'unità alla `Vita` di un'altra;
+- costruzione di una prima semplice meccanica di combattimento.
 
 ## Ultime competenze consolidate
 
@@ -121,11 +125,12 @@ Negli esercizi più recenti sono stati costruiti:
 - funzioni riutilizzabili che ricevono un esercito come parametro;
 - restituzione e successivo utilizzo del dizionario dell'unità selezionata;
 - funzioni che modificano direttamente lo stato di un'unità;
-- gestione della vita minima a zero e riconoscimento della morte dell'unità.
+- gestione della vita minima a zero e riconoscimento della morte dell'unità;
+- interazione tra due unità tramite una funzione di attacco.
 
-L'esercizio 24 introduce la modifica diretta di un dizionario ricevuto come parametro: la funzione `subisci_danno()` riduce la `Vita`, impedisce valori negativi e distingue tra unità ancora viva e unità morta.
+L'esercizio 25 introduce una prima vera meccanica di combattimento: `attacca(attaccante, bersaglio)` usa il `Danno` dell'attaccante per ridurre la `Vita` del bersaglio, mantiene la vita minima a zero e distingue tra sopravvivenza e morte.
 
-Il prossimo passo deve combinare le competenze degli esercizi 23 e 24: selezionare un attaccante e un bersaglio e applicare al bersaglio il `Danno` dell'attaccante.
+Il prossimo passo deve portare questa meccanica da due unità isolate a due piccoli eserciti, riutilizzando la funzione di selezione per scegliere attaccante e bersaglio.
 
 ## Direzione del percorso
 
