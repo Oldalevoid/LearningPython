@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_37.py**
+**Ultimo esercizio completato: esercizio_38.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_37.py
+  esercizio_18.py - esercizio_38.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_38.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_39.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -151,7 +151,13 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - restituzione di una stringa da una funzione con `return`;
 - separazione tra determinazione del risultato e presentazione del risultato;
 - salvataggio del valore restituito da `battaglia()` in una variabile;
-- uso del valore restituito per scegliere il messaggio finale.
+- uso del valore restituito per scegliere il messaggio finale;
+- introduzione della risorsa `oro`;
+- aggiunta della chiave `Costo` alle unità;
+- reclutamento condizionato dalla disponibilità di risorse;
+- aggiornamento dell'oro tramite valore restituito da una funzione;
+- uso di `>=` per consentire l'acquisto quando oro e costo coincidono;
+- importanza di restituire un valore in tutti i percorsi della funzione per evitare `None` inattesi.
 
 ## Ultime competenze consolidate
 
@@ -180,11 +186,13 @@ Negli esercizi più recenti sono stati costruiti:
 - funzione dedicata `calcoladanno()` separata da `attacca()`;
 - funzione `combattimento()` che gestisce un intero scambio di attacchi;
 - funzione `battaglia()` che gestisce l'intera battaglia e restituisce il vincitore;
-- gestione del messaggio finale fuori dalla funzione di battaglia.
+- gestione del messaggio finale fuori dalla funzione di battaglia;
+- funzione `recluta()` che aggiunge unità all'esercito e aggiorna l'oro;
+- controllo delle risorse prima del reclutamento.
 
-L'esercizio 37 rende `battaglia()` più riutilizzabile: la funzione riceve anche i nomi dei due eserciti e restituisce con `return` il nome del vincitore, senza decidere il messaggio finale. Il programma principale salva il risultato nella variabile `vincitore` e usa quel valore per scegliere cosa stampare.
+L'esercizio 38 introduce una prima vera risorsa di gioco: l'oro. Ogni unità possiede un `Costo` e la funzione `recluta()` verifica se il giocatore può permettersela, la aggiunge all'esercito con `.append()`, sottrae il costo e restituisce sempre il valore aggiornato dell'oro. È stato consolidato anche un concetto importante: se un percorso della funzione termina senza `return`, Python restituisce `None`.
 
-Il prossimo passo deve introdurre una prima vera risorsa di gioco: ogni unità avrà un costo e il giocatore dovrà poter reclutare unità spendendo oro, senza poter scendere sotto zero.
+Il prossimo passo deve permettere al giocatore di scegliere quale unità reclutare da un elenco numerato, riutilizzando `enumerate()` e la validazione dell'input.
 
 ## Direzione del percorso
 
