@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_26.py**
+**Ultimo esercizio completato: esercizio_27.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_26.py
+  esercizio_18.py - esercizio_27.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_27.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_28.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -114,7 +114,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - costruzione di una prima semplice meccanica di combattimento;
 - gestione di due eserciti distinti;
 - riuso della stessa funzione di selezione su liste diverse;
-- combinazione tra selezione dell'attaccante, selezione del bersaglio e attacco.
+- combinazione tra selezione dell'attaccante, selezione del bersaglio e attacco;
+- rimozione diretta di un elemento da una lista con `.remove()`;
+- distinzione concettuale tra `.remove(elemento)` e `.pop(indice)`;
+- aggiornamento della composizione di un esercito durante il combattimento.
 
 ## Ultime competenze consolidate
 
@@ -130,11 +133,12 @@ Negli esercizi più recenti sono stati costruiti:
 - funzioni che modificano direttamente lo stato di un'unità;
 - gestione della vita minima a zero e riconoscimento della morte dell'unità;
 - interazione tra due unità tramite una funzione di attacco;
-- selezione di attaccante e bersaglio da due eserciti distinti.
+- selezione di attaccante e bersaglio da due eserciti distinti;
+- rimozione delle unità morte dalla lista dell'esercito.
 
-L'esercizio 26 combina selezione e combattimento: l'utente sceglie un attaccante da `EsercitoAmandola` e un bersaglio da `EsercitoNemico`, poi la funzione `attacca()` applica il danno e aggiorna lo stato del bersaglio.
+L'esercizio 27 modifica davvero la composizione dell'esercito durante il combattimento: quando un bersaglio muore, viene rimosso dalla lista con `.remove(bersaglio)`. È stata inoltre chiarita la differenza tra `.remove(elemento)`, `.pop(indice)` e `.index(elemento)`.
 
-Il prossimo passo deve introdurre la rimozione delle unità morte dall'esercito, così da iniziare a gestire uno stato di battaglia che cambia nel tempo.
+Il prossimo passo deve introdurre un semplice ciclo di battaglia tra due eserciti, fermandosi quando uno dei due rimane senza unità.
 
 ## Direzione del percorso
 
