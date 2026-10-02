@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_25.py**
+**Ultimo esercizio completato: esercizio_26.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_25.py
+  esercizio_18.py - esercizio_26.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_26.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_27.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -111,7 +111,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - interazione tra due dizionari tramite una funzione;
 - uso di `-=` per aggiornare un valore numerico;
 - applicazione del `Danno` di un'unità alla `Vita` di un'altra;
-- costruzione di una prima semplice meccanica di combattimento.
+- costruzione di una prima semplice meccanica di combattimento;
+- gestione di due eserciti distinti;
+- riuso della stessa funzione di selezione su liste diverse;
+- combinazione tra selezione dell'attaccante, selezione del bersaglio e attacco.
 
 ## Ultime competenze consolidate
 
@@ -126,11 +129,12 @@ Negli esercizi più recenti sono stati costruiti:
 - restituzione e successivo utilizzo del dizionario dell'unità selezionata;
 - funzioni che modificano direttamente lo stato di un'unità;
 - gestione della vita minima a zero e riconoscimento della morte dell'unità;
-- interazione tra due unità tramite una funzione di attacco.
+- interazione tra due unità tramite una funzione di attacco;
+- selezione di attaccante e bersaglio da due eserciti distinti.
 
-L'esercizio 25 introduce una prima vera meccanica di combattimento: `attacca(attaccante, bersaglio)` usa il `Danno` dell'attaccante per ridurre la `Vita` del bersaglio, mantiene la vita minima a zero e distingue tra sopravvivenza e morte.
+L'esercizio 26 combina selezione e combattimento: l'utente sceglie un attaccante da `EsercitoAmandola` e un bersaglio da `EsercitoNemico`, poi la funzione `attacca()` applica il danno e aggiorna lo stato del bersaglio.
 
-Il prossimo passo deve portare questa meccanica da due unità isolate a due piccoli eserciti, riutilizzando la funzione di selezione per scegliere attaccante e bersaglio.
+Il prossimo passo deve introdurre la rimozione delle unità morte dall'esercito, così da iniziare a gestire uno stato di battaglia che cambia nel tempo.
 
 ## Direzione del percorso
 
