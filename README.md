@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_43.py**
+**Ultimo esercizio completato: esercizio_44.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_43.py
+  esercizio_18.py - esercizio_44.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_44.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_45.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -171,7 +171,9 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - gestione di più reclutamenti consecutivi nello stesso ciclo;
 - estrazione della validazione dell'input in una funzione riutilizzabile;
 - uso di parametri `minimo` e `massimo` per generalizzare i controlli;
-- eliminazione di `try/except` duplicati dalla logica principale.
+- eliminazione di `try/except` duplicati dalla logica principale;
+- separazione della visualizzazione del catalogo in una funzione dedicata;
+- richiamo di una funzione da un'altra funzione per ridurre responsabilità e duplicazioni.
 
 ## Ultime competenze consolidate
 
@@ -208,11 +210,12 @@ Negli esercizi più recenti sono stati costruiti:
 - separazione tra caserma/catalogo ed esercito realmente posseduto;
 - creazione di copie indipendenti delle unità reclutate tramite `.copy()`;
 - fase di reclutamento ripetuta con `while True` e uscita tramite valore sentinella `0`;
-- funzione `chiediscelta()` dedicata alla validazione robusta di input numerici.
+- funzione `chiediscelta()` dedicata alla validazione robusta di input numerici;
+- funzione `mostracatalogo()` dedicata alla visualizzazione delle unità disponibili.
 
-L'esercizio 43 estrae la validazione dell'input nella funzione riutilizzabile `chiediscelta(messaggio, minimo, massimo)`. La funzione gestisce conversione a intero, valori fuori intervallo e ripetizione della richiesta, restituendo soltanto una scelta valida. `recluta()` può quindi concentrarsi sulla logica del gioco senza duplicare `try/except` e controlli di validazione.
+L'esercizio 44 continua la modularizzazione separando la visualizzazione del catalogo nella funzione `mostracatalogo(caserma)`. Ora `recluta()` delega la stampa delle unità disponibili e mantiene soltanto la logica di scelta, controllo delle risorse e aggiunta all'esercito. È stato anche eliminato un `else` non necessario dopo `break`.
 
-Il prossimo passo deve continuare la modularizzazione, separando anche la visualizzazione del catalogo dalla funzione di reclutamento.
+Il prossimo passo deve continuare a rendere il programma più strutturato introducendo una funzione dedicata alla visualizzazione dell'esercito posseduto.
 
 ## Direzione del percorso
 
