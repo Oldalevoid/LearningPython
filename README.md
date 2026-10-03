@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_47.py**
+**Ultimo esercizio completato: esercizio_48.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_47.py
+  esercizio_18.py - esercizio_48.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_48.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_49.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -179,7 +179,9 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - uso di un accumulatore per sommare una statistica dell'esercito;
 - funzione `calcolavaloreesercito()` che restituisce la somma dei costi delle unità;
 - funzione `calcolavitatotaleesercito()` che somma la Vita di tutte le unità;
-- riuso consapevole del pattern dell'accumulatore su proprietà diverse.
+- riuso consapevole del pattern dell'accumulatore su proprietà diverse;
+- composizione di più funzioni in una funzione di riepilogo;
+- riuso di funzioni esistenti per evitare duplicazione di logica.
 
 ## Ultime competenze consolidate
 
@@ -220,11 +222,12 @@ Negli esercizi più recenti sono stati costruiti:
 - funzione `mostracatalogo()` dedicata alla visualizzazione delle unità disponibili;
 - funzione `mostraesercito()` dedicata alla visualizzazione delle unità possedute;
 - funzione `calcolavaloreesercito()` dedicata al calcolo del valore complessivo dell'esercito;
-- funzione `calcolavitatotaleesercito()` dedicata al calcolo della Vita complessiva.
+- funzione `calcolavitatotaleesercito()` dedicata al calcolo della Vita complessiva;
+- funzione `riepilogaesercito()` che combina più statistiche riutilizzando funzioni già esistenti.
 
-L'esercizio 47 consolida il pattern dell'accumulatore con la funzione `calcolavitatotaleesercito(esercito)`, che somma la Vita di tutte le unità. Lo studente ha riutilizzato autonomamente la stessa struttura logica già usata per il costo totale, mostrando di aver compreso il pattern e non soltanto il singolo esercizio.
+L'esercizio 48 introduce `riepilogaesercito(esercito)`, che combina `len()`, `calcolavaloreesercito()` e `calcolavitatotaleesercito()` per produrre un riepilogo unico senza duplicare i calcoli. È stato consolidato il principio di composizione e riuso delle funzioni.
 
-Il prossimo passo deve introdurre una funzione di sintesi che combini più statistiche dell'esercito in un'unica presentazione, riutilizzando funzioni già scritte invece di ripetere i calcoli.
+Il prossimo passo deve iniziare a costruire un menu principale che colleghi le funzioni già sviluppate in un unico flusso interattivo.
 
 ## Direzione del percorso
 
