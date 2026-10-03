@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_46.py**
+**Ultimo esercizio completato: esercizio_47.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_46.py
+  esercizio_18.py - esercizio_47.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_47.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_48.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -177,7 +177,9 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - visualizzazione strutturata dell'esercito tramite una funzione dedicata;
 - controllo esplicito del caso lista vuota con `len()`;
 - uso di un accumulatore per sommare una statistica dell'esercito;
-- funzione `calcolavaloreesercito()` che restituisce la somma dei costi delle unità.
+- funzione `calcolavaloreesercito()` che restituisce la somma dei costi delle unità;
+- funzione `calcolavitatotaleesercito()` che somma la Vita di tutte le unità;
+- riuso consapevole del pattern dell'accumulatore su proprietà diverse.
 
 ## Ultime competenze consolidate
 
@@ -217,11 +219,12 @@ Negli esercizi più recenti sono stati costruiti:
 - funzione `chiediscelta()` dedicata alla validazione robusta di input numerici;
 - funzione `mostracatalogo()` dedicata alla visualizzazione delle unità disponibili;
 - funzione `mostraesercito()` dedicata alla visualizzazione delle unità possedute;
-- funzione `calcolavaloreesercito()` dedicata al calcolo del valore complessivo dell'esercito.
+- funzione `calcolavaloreesercito()` dedicata al calcolo del valore complessivo dell'esercito;
+- funzione `calcolavitatotaleesercito()` dedicata al calcolo della Vita complessiva.
 
-L'esercizio 46 aggiunge la funzione `calcolavaloreesercito(esercito)`, che usa un accumulatore per sommare il costo di tutte le unità possedute e restituisce il totale con `return`. È stato consolidato l'uso di un ciclo `for` su una lista di dizionari per ricavare una statistica aggregata.
+L'esercizio 47 consolida il pattern dell'accumulatore con la funzione `calcolavitatotaleesercito(esercito)`, che somma la Vita di tutte le unità. Lo studente ha riutilizzato autonomamente la stessa struttura logica già usata per il costo totale, mostrando di aver compreso il pattern e non soltanto il singolo esercizio.
 
-Il prossimo passo deve continuare a lavorare su statistiche aggregate dell'esercito, introducendo una nuova funzione che calcoli un altro valore complessivo senza duplicare logica.
+Il prossimo passo deve introdurre una funzione di sintesi che combini più statistiche dell'esercito in un'unica presentazione, riutilizzando funzioni già scritte invece di ripetere i calcoli.
 
 ## Direzione del percorso
 
