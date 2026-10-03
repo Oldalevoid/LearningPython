@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_48.py**
+**Ultimo esercizio completato: esercizio_49.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_48.py
+  esercizio_18.py - esercizio_49.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_49.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_50.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -181,7 +181,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - funzione `calcolavitatotaleesercito()` che somma la Vita di tutte le unità;
 - riuso consapevole del pattern dell'accumulatore su proprietà diverse;
 - composizione di più funzioni in una funzione di riepilogo;
-- riuso di funzioni esistenti per evitare duplicazione di logica.
+- riuso di funzioni esistenti per evitare duplicazione di logica;
+- costruzione di un menu principale persistente con `while True`;
+- coordinamento di più funzioni attraverso una funzione di alto livello;
+- aggiornamento e restituzione dello stato `oro` dal menu principale.
 
 ## Ultime competenze consolidate
 
@@ -223,11 +226,12 @@ Negli esercizi più recenti sono stati costruiti:
 - funzione `mostraesercito()` dedicata alla visualizzazione delle unità possedute;
 - funzione `calcolavaloreesercito()` dedicata al calcolo del valore complessivo dell'esercito;
 - funzione `calcolavitatotaleesercito()` dedicata al calcolo della Vita complessiva;
-- funzione `riepilogaesercito()` che combina più statistiche riutilizzando funzioni già esistenti.
+- funzione `riepilogaesercito()` che combina più statistiche riutilizzando funzioni già esistenti;
+- funzione `mostramenu()` che collega le principali funzionalità del programma in un unico flusso interattivo.
 
-L'esercizio 48 introduce `riepilogaesercito(esercito)`, che combina `len()`, `calcolavaloreesercito()` e `calcolavitatotaleesercito()` per produrre un riepilogo unico senza duplicare i calcoli. È stato consolidato il principio di composizione e riuso delle funzioni.
+L'esercizio 49 introduce `mostramenu(oro)`, un menu principale persistente che coordina visualizzazione dell'esercito, reclutamento, riepilogo e consultazione dell'oro. È stato consolidato il passaggio dello stato tra funzioni: `recluta()` restituisce l'oro aggiornato e `mostramenu()` lo conserva e lo restituisce al programma principale.
 
-Il prossimo passo deve iniziare a costruire un menu principale che colleghi le funzioni già sviluppate in un unico flusso interattivo.
+Il prossimo passo deve iniziare a trasformare il programma in una piccola applicazione testuale più completa, aggiungendo una nuova azione di gioco al menu senza rompere la struttura modulare già costruita.
 
 ## Direzione del percorso
 
