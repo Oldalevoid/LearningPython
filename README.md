@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_39.py**
+**Ultimo esercizio completato: esercizio_40.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_39.py
+  esercizio_18.py - esercizio_40.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_40.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_41.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -160,7 +160,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - importanza di restituire un valore in tutti i percorsi della funzione per evitare `None` inattesi;
 - uso combinato di `enumerate()`, `try/except`, `while True`, `continue` e `break` per validare una scelta di menu;
 - trasformazione della scelta mostrata all'utente nell'indice reale della lista con `scelta - 1`;
-- distinzione operativa tra `continue`, `break` e `return`.
+- distinzione operativa tra `continue`, `break` e `return`;
+- separazione tra catalogo delle unità disponibili ed esercito posseduto;
+- passaggio di due liste con ruoli distinti alla stessa funzione;
+- aggiunta dell'unità scelta dal catalogo a una lista esercito separata.
 
 ## Ultime competenze consolidate
 
@@ -193,11 +196,12 @@ Negli esercizi più recenti sono stati costruiti:
 - funzione `recluta()` che aggiunge unità all'esercito e aggiorna l'oro;
 - controllo delle risorse prima del reclutamento;
 - menu numerato di reclutamento con input robusto;
-- selezione di un'unità tramite indice validato.
+- selezione di un'unità tramite indice validato;
+- separazione tra caserma/catalogo ed esercito realmente posseduto.
 
-L'esercizio 39 aggiunge un menu numerato per scegliere quale unità reclutare. La funzione usa `enumerate(..., start=1)` per mostrare le opzioni, `try/except ValueError` per gestire input non numerici, `while True` e `continue` per ripetere la richiesta e `break` per proseguire solo quando la scelta è valida. È stata consolidata anche la conversione tra numero mostrato all'utente e indice reale della lista tramite `scelta - 1`.
+L'esercizio 40 separa il catalogo delle unità disponibili dall'esercito realmente posseduto. La funzione `recluta(caserma, esercito, oro)` sceglie un'unità dalla caserma tramite indice validato e, se l'oro è sufficiente, la aggiunge alla lista dell'esercito con `.append()` e aggiorna la risorsa disponibile.
 
-Il prossimo passo deve separare chiaramente il catalogo delle unità disponibili dall'esercito posseduto dal giocatore: la scelta avverrà dal catalogo, mentre l'unità reclutata verrà aggiunta a una lista `EsercitoAmandola` separata.
+Il prossimo passo deve affrontare il problema dei riferimenti condivisi tra dizionari: ogni unità reclutata dovrà essere una copia indipendente, così modificare la Vita di una copia non influenzerà le altre.
 
 ## Direzione del percorso
 
