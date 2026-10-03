@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_42.py**
+**Ultimo esercizio completato: esercizio_43.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_42.py
+  esercizio_18.py - esercizio_43.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_43.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_44.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -168,7 +168,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - uso di `.copy()` per creare unità indipendenti a partire dal catalogo;
 - uso di un valore sentinella (`0`) per terminare una fase interattiva;
 - controllo del valore sentinella prima della conversione della scelta in indice;
-- gestione di più reclutamenti consecutivi nello stesso ciclo.
+- gestione di più reclutamenti consecutivi nello stesso ciclo;
+- estrazione della validazione dell'input in una funzione riutilizzabile;
+- uso di parametri `minimo` e `massimo` per generalizzare i controlli;
+- eliminazione di `try/except` duplicati dalla logica principale.
 
 ## Ultime competenze consolidate
 
@@ -204,11 +207,12 @@ Negli esercizi più recenti sono stati costruiti:
 - selezione di un'unità tramite indice validato;
 - separazione tra caserma/catalogo ed esercito realmente posseduto;
 - creazione di copie indipendenti delle unità reclutate tramite `.copy()`;
-- fase di reclutamento ripetuta con `while True` e uscita tramite valore sentinella `0`.
+- fase di reclutamento ripetuta con `while True` e uscita tramite valore sentinella `0`;
+- funzione `chiediscelta()` dedicata alla validazione robusta di input numerici.
 
-L'esercizio 42 trasforma il reclutamento in una vera fase di gioco ripetuta. Il giocatore può reclutare più unità in successione, l'oro viene aggiornato dopo ogni acquisto e il valore sentinella `0` termina la fase. È stato consolidato anche l'ordine corretto dei controlli: `0` va intercettato prima di calcolare `scelta - 1`, evitando che diventi l'indice `-1`.
+L'esercizio 43 estrae la validazione dell'input nella funzione riutilizzabile `chiediscelta(messaggio, minimo, massimo)`. La funzione gestisce conversione a intero, valori fuori intervallo e ripetizione della richiesta, restituendo soltanto una scelta valida. `recluta()` può quindi concentrarsi sulla logica del gioco senza duplicare `try/except` e controlli di validazione.
 
-Il prossimo passo deve iniziare a ridurre la duplicazione della logica di input, estraendo la validazione di una scelta numerica in una funzione riutilizzabile.
+Il prossimo passo deve continuare la modularizzazione, separando anche la visualizzazione del catalogo dalla funzione di reclutamento.
 
 ## Direzione del percorso
 
