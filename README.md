@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_40.py**
+**Ultimo esercizio completato: esercizio_41.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_40.py
+  esercizio_18.py - esercizio_41.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_41.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_42.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -163,7 +163,9 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - distinzione operativa tra `continue`, `break` e `return`;
 - separazione tra catalogo delle unità disponibili ed esercito posseduto;
 - passaggio di due liste con ruoli distinti alla stessa funzione;
-- aggiunta dell'unità scelta dal catalogo a una lista esercito separata.
+- aggiunta dell'unità scelta dal catalogo a una lista esercito separata;
+- differenza tra aggiungere un riferimento a un dizionario e aggiungerne una copia;
+- uso di `.copy()` per creare unità indipendenti a partire dal catalogo.
 
 ## Ultime competenze consolidate
 
@@ -197,11 +199,12 @@ Negli esercizi più recenti sono stati costruiti:
 - controllo delle risorse prima del reclutamento;
 - menu numerato di reclutamento con input robusto;
 - selezione di un'unità tramite indice validato;
-- separazione tra caserma/catalogo ed esercito realmente posseduto.
+- separazione tra caserma/catalogo ed esercito realmente posseduto;
+- creazione di copie indipendenti delle unità reclutate tramite `.copy()`.
 
-L'esercizio 40 separa il catalogo delle unità disponibili dall'esercito realmente posseduto. La funzione `recluta(caserma, esercito, oro)` sceglie un'unità dalla caserma tramite indice validato e, se l'oro è sufficiente, la aggiunge alla lista dell'esercito con `.append()` e aggiorna la risorsa disponibile.
+L'esercizio 41 introduce il concetto di riferimento condiviso tra dizionari e lo risolve usando `.copy()`. Ora ogni unità reclutata viene inserita nell'esercito come dizionario indipendente, così modificare la Vita di una copia non modifica le altre unità dello stesso tipo né il catalogo originale.
 
-Il prossimo passo deve affrontare il problema dei riferimenti condivisi tra dizionari: ogni unità reclutata dovrà essere una copia indipendente, così modificare la Vita di una copia non influenzerà le altre.
+Il prossimo passo deve trasformare il reclutamento da operazione singola a vera fase di gioco: il giocatore potrà reclutare più unità in successione, aggiornando l'oro a ogni acquisto e scegliendo quando terminare.
 
 ## Direzione del percorso
 
