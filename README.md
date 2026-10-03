@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_44.py**
+**Ultimo esercizio completato: esercizio_45.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_44.py
+  esercizio_18.py - esercizio_45.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_45.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_46.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -173,7 +173,9 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - uso di parametri `minimo` e `massimo` per generalizzare i controlli;
 - eliminazione di `try/except` duplicati dalla logica principale;
 - separazione della visualizzazione del catalogo in una funzione dedicata;
-- richiamo di una funzione da un'altra funzione per ridurre responsabilità e duplicazioni.
+- richiamo di una funzione da un'altra funzione per ridurre responsabilità e duplicazioni;
+- visualizzazione strutturata dell'esercito tramite una funzione dedicata;
+- controllo esplicito del caso lista vuota con `len()`.
 
 ## Ultime competenze consolidate
 
@@ -211,11 +213,12 @@ Negli esercizi più recenti sono stati costruiti:
 - creazione di copie indipendenti delle unità reclutate tramite `.copy()`;
 - fase di reclutamento ripetuta con `while True` e uscita tramite valore sentinella `0`;
 - funzione `chiediscelta()` dedicata alla validazione robusta di input numerici;
-- funzione `mostracatalogo()` dedicata alla visualizzazione delle unità disponibili.
+- funzione `mostracatalogo()` dedicata alla visualizzazione delle unità disponibili;
+- funzione `mostraesercito()` dedicata alla visualizzazione delle unità possedute.
 
-L'esercizio 44 continua la modularizzazione separando la visualizzazione del catalogo nella funzione `mostracatalogo(caserma)`. Ora `recluta()` delega la stampa delle unità disponibili e mantiene soltanto la logica di scelta, controllo delle risorse e aggiunta all'esercito. È stato anche eliminato un `else` non necessario dopo `break`.
+L'esercizio 45 aggiunge la funzione `mostraesercito(esercito)`, che gestisce sia il caso di esercito vuoto sia la visualizzazione numerata delle unità possedute con le statistiche principali. La presentazione dello stato dell'esercito è ora separata dalla logica di reclutamento.
 
-Il prossimo passo deve continuare a rendere il programma più strutturato introducendo una funzione dedicata alla visualizzazione dell'esercito posseduto.
+Il prossimo passo deve continuare la modularizzazione introducendo una funzione che calcoli e mostri il costo totale oppure la composizione sintetica dell'esercito, riutilizzando le strutture dati già acquisite.
 
 ## Direzione del percorso
 
