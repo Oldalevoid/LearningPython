@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_45.py**
+**Ultimo esercizio completato: esercizio_46.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_45.py
+  esercizio_18.py - esercizio_46.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_46.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_47.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -175,7 +175,9 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - separazione della visualizzazione del catalogo in una funzione dedicata;
 - richiamo di una funzione da un'altra funzione per ridurre responsabilità e duplicazioni;
 - visualizzazione strutturata dell'esercito tramite una funzione dedicata;
-- controllo esplicito del caso lista vuota con `len()`.
+- controllo esplicito del caso lista vuota con `len()`;
+- uso di un accumulatore per sommare una statistica dell'esercito;
+- funzione `calcolavaloreesercito()` che restituisce la somma dei costi delle unità.
 
 ## Ultime competenze consolidate
 
@@ -214,11 +216,12 @@ Negli esercizi più recenti sono stati costruiti:
 - fase di reclutamento ripetuta con `while True` e uscita tramite valore sentinella `0`;
 - funzione `chiediscelta()` dedicata alla validazione robusta di input numerici;
 - funzione `mostracatalogo()` dedicata alla visualizzazione delle unità disponibili;
-- funzione `mostraesercito()` dedicata alla visualizzazione delle unità possedute.
+- funzione `mostraesercito()` dedicata alla visualizzazione delle unità possedute;
+- funzione `calcolavaloreesercito()` dedicata al calcolo del valore complessivo dell'esercito.
 
-L'esercizio 45 aggiunge la funzione `mostraesercito(esercito)`, che gestisce sia il caso di esercito vuoto sia la visualizzazione numerata delle unità possedute con le statistiche principali. La presentazione dello stato dell'esercito è ora separata dalla logica di reclutamento.
+L'esercizio 46 aggiunge la funzione `calcolavaloreesercito(esercito)`, che usa un accumulatore per sommare il costo di tutte le unità possedute e restituisce il totale con `return`. È stato consolidato l'uso di un ciclo `for` su una lista di dizionari per ricavare una statistica aggregata.
 
-Il prossimo passo deve continuare la modularizzazione introducendo una funzione che calcoli e mostri il costo totale oppure la composizione sintetica dell'esercito, riutilizzando le strutture dati già acquisite.
+Il prossimo passo deve continuare a lavorare su statistiche aggregate dell'esercito, introducendo una nuova funzione che calcoli un altro valore complessivo senza duplicare logica.
 
 ## Direzione del percorso
 
