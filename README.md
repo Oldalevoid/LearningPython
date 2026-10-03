@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_41.py**
+**Ultimo esercizio completato: esercizio_42.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_41.py
+  esercizio_18.py - esercizio_42.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_42.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_43.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -165,7 +165,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - passaggio di due liste con ruoli distinti alla stessa funzione;
 - aggiunta dell'unità scelta dal catalogo a una lista esercito separata;
 - differenza tra aggiungere un riferimento a un dizionario e aggiungerne una copia;
-- uso di `.copy()` per creare unità indipendenti a partire dal catalogo.
+- uso di `.copy()` per creare unità indipendenti a partire dal catalogo;
+- uso di un valore sentinella (`0`) per terminare una fase interattiva;
+- controllo del valore sentinella prima della conversione della scelta in indice;
+- gestione di più reclutamenti consecutivi nello stesso ciclo.
 
 ## Ultime competenze consolidate
 
@@ -200,11 +203,12 @@ Negli esercizi più recenti sono stati costruiti:
 - menu numerato di reclutamento con input robusto;
 - selezione di un'unità tramite indice validato;
 - separazione tra caserma/catalogo ed esercito realmente posseduto;
-- creazione di copie indipendenti delle unità reclutate tramite `.copy()`.
+- creazione di copie indipendenti delle unità reclutate tramite `.copy()`;
+- fase di reclutamento ripetuta con `while True` e uscita tramite valore sentinella `0`.
 
-L'esercizio 41 introduce il concetto di riferimento condiviso tra dizionari e lo risolve usando `.copy()`. Ora ogni unità reclutata viene inserita nell'esercito come dizionario indipendente, così modificare la Vita di una copia non modifica le altre unità dello stesso tipo né il catalogo originale.
+L'esercizio 42 trasforma il reclutamento in una vera fase di gioco ripetuta. Il giocatore può reclutare più unità in successione, l'oro viene aggiornato dopo ogni acquisto e il valore sentinella `0` termina la fase. È stato consolidato anche l'ordine corretto dei controlli: `0` va intercettato prima di calcolare `scelta - 1`, evitando che diventi l'indice `-1`.
 
-Il prossimo passo deve trasformare il reclutamento da operazione singola a vera fase di gioco: il giocatore potrà reclutare più unità in successione, aggiornando l'oro a ogni acquisto e scegliendo quando terminare.
+Il prossimo passo deve iniziare a ridurre la duplicazione della logica di input, estraendo la validazione di una scelta numerica in una funzione riutilizzabile.
 
 ## Direzione del percorso
 
