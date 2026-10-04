@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_49.py**
+**Ultimo esercizio completato: esercizio_50.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_49.py
+  esercizio_18.py - esercizio_50.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_50.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_51.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -184,7 +184,10 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - riuso di funzioni esistenti per evitare duplicazione di logica;
 - costruzione di un menu principale persistente con `while True`;
 - coordinamento di più funzioni attraverso una funzione di alto livello;
-- aggiornamento e restituzione dello stato `oro` dal menu principale.
+- aggiornamento e restituzione dello stato `oro` dal menu principale;
+- integrazione di una nuova azione nel menu principale;
+- rimozione di un elemento da una lista tramite `.pop(indice)`;
+- uso dei parametri della funzione al posto di variabili globali nella logica di eliminazione.
 
 ## Ultime competenze consolidate
 
@@ -227,11 +230,12 @@ Negli esercizi più recenti sono stati costruiti:
 - funzione `calcolavaloreesercito()` dedicata al calcolo del valore complessivo dell'esercito;
 - funzione `calcolavitatotaleesercito()` dedicata al calcolo della Vita complessiva;
 - funzione `riepilogaesercito()` che combina più statistiche riutilizzando funzioni già esistenti;
-- funzione `mostramenu()` che collega le principali funzionalità del programma in un unico flusso interattivo.
+- funzione `mostramenu()` che collega le principali funzionalità del programma in un unico flusso interattivo;
+- funzione `eliminaunita()` che mostra le unità numerate, valida la scelta e rimuove l'elemento selezionato.
 
-L'esercizio 49 introduce `mostramenu(oro)`, un menu principale persistente che coordina visualizzazione dell'esercito, reclutamento, riepilogo e consultazione dell'oro. È stato consolidato il passaggio dello stato tra funzioni: `recluta()` restituisce l'oro aggiornato e `mostramenu()` lo conserva e lo restituisce al programma principale.
+L'esercizio 50 aggiunge `eliminaunita(esercito)` e integra una nuova azione nel menu principale. La funzione controlla il caso di esercito vuoto, mostra le unità numerate, valida una scelta compresa tra `1` e `len(esercito)` e rimuove l'unità selezionata con `.pop(indice)`. È stato consolidato anche l'uso del parametro `esercito` al posto della variabile globale specifica.
 
-Il prossimo passo deve iniziare a trasformare il programma in una piccola applicazione testuale più completa, aggiungendo una nuova azione di gioco al menu senza rompere la struttura modulare già costruita.
+Il prossimo passo deve continuare ad ampliare il programma testuale introducendo una nuova azione di gioco che modifichi lo stato di una singola unità, mantenendo separata la logica in una funzione dedicata.
 
 ## Direzione del percorso
 
