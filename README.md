@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_51.py**
+**Ultimo esercizio completato: esercizio_52.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_51.py
+  esercizio_18.py - esercizio_52.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_52.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_53.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -189,7 +189,11 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - rimozione di un elemento da una lista tramite `.pop(indice)`;
 - uso dei parametri della funzione al posto di variabili globali nella logica di eliminazione;
 - modifica diretta dello stato di una singola unità contenuta in una lista di dizionari;
-- aggiornamento coordinato di più attributi (`Livello`, `Vita`, `Danno`) della stessa unità.
+- aggiornamento coordinato di più attributi (`Livello`, `Vita`, `Danno`) della stessa unità;
+- gestione di due eserciti separati;
+- selezione distinta di attaccante e bersaglio;
+- uso della statistica `Danno` per modificare la `Vita` di un'altra unità;
+- gestione del limite minimo della Vita a zero.
 
 ## Ultime competenze consolidate
 
@@ -234,11 +238,12 @@ Negli esercizi più recenti sono stati costruiti:
 - funzione `riepilogaesercito()` che combina più statistiche riutilizzando funzioni già esistenti;
 - funzione `mostramenu()` che collega le principali funzionalità del programma in un unico flusso interattivo;
 - funzione `eliminaunita()` che mostra le unità numerate, valida la scelta e rimuove l'elemento selezionato;
-- funzione `livellaunita()` che seleziona un'unità e ne modifica permanentemente più statistiche.
+- funzione `livellaunita()` che seleziona un'unità e ne modifica permanentemente più statistiche;
+- funzione `attaccanemico()` che coordina selezione dell'attaccante, scelta del bersaglio e applicazione del danno.
 
-L'esercizio 51 introduce un vero sistema di level-up: ogni unità possiede ora `Danno` e `Livello`, e `livellaunita(esercito)` permette di selezionare una singola unità e modificarne direttamente `Livello`, `Vita` e `Danno`. `mostraesercito()` è stato aggiornato per rendere visibili le nuove statistiche. È stato consolidato il concetto di stato persistente dell'unità e di modifica di più campi dello stesso dizionario.
+L'esercizio 52 introduce il primo vero scambio offensivo del RTS: il giocatore sceglie un'unità del proprio esercito, seleziona un bersaglio nell'esercito nemico e applica il valore `Danno` alla `Vita` del bersaglio. La Vita viene limitata a zero e sono gestiti i casi di esercito vuoto. È stato consolidato il passaggio da semplici statistiche memorizzate a statistiche che producono effetti sullo stato di altre unità.
 
-Il prossimo passo deve continuare a costruire il piccolo RTS testuale introducendo una meccanica che usi davvero le statistiche delle unità, preparando il terreno per integrare combattimento e progressione.
+Il prossimo passo deve rendere il combattimento più completo, facendo reagire il nemico e iniziando a gestire la rimozione delle unità sconfitte o una sequenza di turni.
 
 ## Direzione del percorso
 
