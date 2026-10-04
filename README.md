@@ -35,7 +35,7 @@ Questa operazione fa parte del push dell'esercizio: non deve essere lasciata a u
 
 ## Punto attuale del percorso
 
-**Ultimo esercizio completato: esercizio_50.py**
+**Ultimo esercizio completato: esercizio_51.py**
 
 Percorso attuale:
 
@@ -50,10 +50,10 @@ Percorso attuale:
   esercizio_10.py - esercizio_17.py
 
 04_programmi_interattivi/
-  esercizio_18.py - esercizio_50.py
+  esercizio_18.py - esercizio_51.py
 ```
 
-Il prossimo esercizio da proporre è quindi **esercizio_51.py**, salvo diversa richiesta esplicita.
+Il prossimo esercizio da proporre è quindi **esercizio_52.py**, salvo diversa richiesta esplicita.
 
 ## Livello attuale
 
@@ -187,7 +187,9 @@ Non sto più lavorando solo su singole istruzioni isolate: riesco a costruire pi
 - aggiornamento e restituzione dello stato `oro` dal menu principale;
 - integrazione di una nuova azione nel menu principale;
 - rimozione di un elemento da una lista tramite `.pop(indice)`;
-- uso dei parametri della funzione al posto di variabili globali nella logica di eliminazione.
+- uso dei parametri della funzione al posto di variabili globali nella logica di eliminazione;
+- modifica diretta dello stato di una singola unità contenuta in una lista di dizionari;
+- aggiornamento coordinato di più attributi (`Livello`, `Vita`, `Danno`) della stessa unità.
 
 ## Ultime competenze consolidate
 
@@ -231,11 +233,12 @@ Negli esercizi più recenti sono stati costruiti:
 - funzione `calcolavitatotaleesercito()` dedicata al calcolo della Vita complessiva;
 - funzione `riepilogaesercito()` che combina più statistiche riutilizzando funzioni già esistenti;
 - funzione `mostramenu()` che collega le principali funzionalità del programma in un unico flusso interattivo;
-- funzione `eliminaunita()` che mostra le unità numerate, valida la scelta e rimuove l'elemento selezionato.
+- funzione `eliminaunita()` che mostra le unità numerate, valida la scelta e rimuove l'elemento selezionato;
+- funzione `livellaunita()` che seleziona un'unità e ne modifica permanentemente più statistiche.
 
-L'esercizio 50 aggiunge `eliminaunita(esercito)` e integra una nuova azione nel menu principale. La funzione controlla il caso di esercito vuoto, mostra le unità numerate, valida una scelta compresa tra `1` e `len(esercito)` e rimuove l'unità selezionata con `.pop(indice)`. È stato consolidato anche l'uso del parametro `esercito` al posto della variabile globale specifica.
+L'esercizio 51 introduce un vero sistema di level-up: ogni unità possiede ora `Danno` e `Livello`, e `livellaunita(esercito)` permette di selezionare una singola unità e modificarne direttamente `Livello`, `Vita` e `Danno`. `mostraesercito()` è stato aggiornato per rendere visibili le nuove statistiche. È stato consolidato il concetto di stato persistente dell'unità e di modifica di più campi dello stesso dizionario.
 
-Il prossimo passo deve continuare ad ampliare il programma testuale introducendo una nuova azione di gioco che modifichi lo stato di una singola unità, mantenendo separata la logica in una funzione dedicata.
+Il prossimo passo deve continuare a costruire il piccolo RTS testuale introducendo una meccanica che usi davvero le statistiche delle unità, preparando il terreno per integrare combattimento e progressione.
 
 ## Direzione del percorso
 
